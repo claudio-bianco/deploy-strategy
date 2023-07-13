@@ -17,10 +17,10 @@ pipeline {
         stage('AWS') {           
             steps {
                 echo 'AWS command..'
-                sh '''
-                  aws --version
-                  aws ec2 describe-instances
-                '''
+//                sh '''
+//                  aws --version
+//                  aws ec2 describe-instances
+//                '''
             }
         }        
     }
