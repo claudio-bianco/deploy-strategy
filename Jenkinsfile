@@ -1,5 +1,8 @@
 pipeline {
     agent { label 'docker-agent' }
+    options {
+        skipDefaultCheckout true
+    }    
     stages {
         stage('build') {
             steps {
