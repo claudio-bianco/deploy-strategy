@@ -1,3 +1,3 @@
 # deploy-strategy
 deploy strategy
-test new
+test new old
