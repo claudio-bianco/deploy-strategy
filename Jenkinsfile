@@ -1,10 +1,10 @@
 pipeline {
-    agent { label 'docker-agent' }
-    scmVars = checkout scm
+    agent { label 'docker-agent' }    
     stages {
         stage('build') {
             steps {
-                sh 'docker --version'                
+                sh 'docker --version'
+                sh 'printenv'
             }
         }
         stage('Init') {
