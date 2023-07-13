@@ -10,9 +10,8 @@ pipeline {
         stage('Init') {
             steps {
                 echo 'Initializing..'
-                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL} and ${scmVars.GIT_BRANCH}"
-                echo "Current branch: ${env.BRANCH_NAME}"
-                echo "Current tag: ${env.TAG_NAME}"
+                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+                echo "Current branch: ${env.GIT_BRANCH}"
             }
         }
         stage('AWS') {           
